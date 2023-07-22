@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 gap: 20px;
-    justify-items: center;
+
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -17,4 +17,17 @@ gap: 20px;
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.161);
     margin-bottom: 30px;
+}
+
+.display {
+    display: grid;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
 }

@@ -53,7 +53,7 @@ export default function MovieItem({movie}) {
       <CardActionArea>
    
         {/* Title */}
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography fontWeight="bold" color="black" gutterBottom variant="h5" component="div">
           {movie.title}
         </Typography>
         {/* Poster */}
@@ -89,7 +89,7 @@ export default function MovieItem({movie}) {
                 textTransform: "capitalize",
                 variant: "body2",
                 color: "black",
-                fontWeight: "bold",
+  
                 fontSize: 13,
               }}
             >

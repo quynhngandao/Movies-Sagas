@@ -2,20 +2,15 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import MovieList from "../MovieList/MovieList";
 import MovieDetail from "../MovieDetail/MovieDetail";
+import AppBarButton from "../AppBarButton/AppBarButton";
 
 function App() {
   return (
     <div className="App">
-      <h1>The Movies Saga!</h1>
       <Router>
+      
         {/* Nav bar */}
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
-        </nav>
+       <AppBarButton/>
 
         {/* Display list Pages */}
         <Route path="/" exact>

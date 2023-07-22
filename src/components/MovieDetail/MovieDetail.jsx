@@ -30,29 +30,34 @@ function MovieDetail() {
 
   return (
     <>
-
-<Card sx={{ maxWidth: 345 }}>
+    <div className="display">  
+    <Typography sx={{ fontWeight: "bold" , margin: "auto" }} gutterBottom variant="h5" component="div">
+        {detail.title}
+        </Typography>
+<Card sx={{ maxWidth: 800}}>
       <CardMedia
         component="img"
-        height="140"
+        height="400"
         image={detail.poster}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        {detail.title}
-        </Typography>
+      
         
       </CardContent>
       <CardActions>
+      <Typography sx={{ fontWeight: "bold"}} gutterBottom variant="h6" component="div">
         {detail.genres}
+        </Typography>
        
       </CardActions>
+      
     </Card> 
-    <Typography variant="body2" color="text.secondary">
+    <Typography  sx={{ marginTop:2, maxWidth: 800, marginBottom: 1, padding:1}}  variant="body3" color="text.secondary" >
          {detail.description}
         </Typography>
-    <Button onClick={handleClick}>Go Home</Button>
-    </>
+     </div>
+     <Button type="variant" onClick={handleClick}>Go Home</Button>
+     </>
   );
 }
 
