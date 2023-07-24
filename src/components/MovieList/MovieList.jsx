@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import MovieItem from "./MovieItem";
 import "./MovieList.css";
-
+ 
 function MovieList() {
   const dispatch = useDispatch();
   const movies = useSelector((store) => store.movies);
